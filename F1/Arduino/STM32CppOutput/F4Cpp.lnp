@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+"..\..\stm32cppoutput\startup_stm32f103xg.o"
+"..\..\SYSTEM\F1Cpp.lib"
+"..\..\stm32cppoutput\pinmap.o"
+"..\..\stm32cppoutput\dht11.o"
+"..\..\stm32cppoutput\tm1637display.o"
+"..\..\stm32cppoutput\stm32f1xx_hal_msp.o"
+"..\..\stm32cppoutput\stm32f1xx_it.o"
+"..\..\stm32cppoutput\main.o"
+--library_type=microlib --strict --scatter "..\..\STM32CppOutput\F4Cpp.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F4Cpp.map" -o ..\..\STM32CppOutput\F4Cpp.axf

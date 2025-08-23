@@ -1,0 +1,1231 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Huy My PC, Huy, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\hcstm32\000\USER\TEMP.uvprojx
+Project File Date:  01/11/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'TEMP'
+../CORE/core_cm3.c(445): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../CORE/core_cm3.c(442): note: attribute is here
+uint32_t __get_PSP(void) __attribute__( ( naked ) );
+                                          ^
+../CORE/core_cm3.c(465): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfProcStack) );
+                                             ^
+../CORE/core_cm3.c(461): note: attribute is here
+void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+                                                         ^
+../CORE/core_cm3.c(479): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../CORE/core_cm3.c(476): note: attribute is here
+uint32_t __get_MSP(void) __attribute__( ( naked ) );
+                                          ^
+../CORE/core_cm3.c(499): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfMainStack) );
+                                             ^
+../CORE/core_cm3.c(495): note: attribute is here
+void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+                                                         ^
+4 errors generated.
+compiling core_cm3.c...
+../SYSTEM/usart/usart.c(1): warning: In file included from...
+../SYSTEM/sys\sys.h(3): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../SYSTEM/usart/usart.c(207): error: '#pragma import' is an Arm Compiler 5 extension, and is not supported by Arm Compiler for Embedded 6 [-Warmcc-pragma-import]
+#pragma import(__use_no_semihosting)             
+        ^
+../SYSTEM/usart/usart.c(209): error: redefinition of '__FILE'
+struct __FILE 
+       ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(119): note: previous definition is here
+struct __FILE {
+       ^
+../SYSTEM/usart/usart.c(224): warning: while loop has empty body [-Wempty-body]
+        while((USART1->SR&0X40)==0);
+                                   ^
+../SYSTEM/usart/usart.c(224): note: put the semicolon on a separate line to silence this warning
+1 warning and 19 errors generated.
+compiling usart.c...
+../STM32F10x_FWLib/src/misc.c(24): warning: In file included from...
+../STM32F10x_FWLib/inc\misc.h(32): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling misc.c...
+../HARDWARE/LED/LED.c(1): warning: In file included from...
+../HARDWARE/LED/LED.h(3): warning: In file included from...
+../SYSTEM/sys\sys.h(3): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling LED.c...
+../STM32F10x_FWLib/src/stm32f10x_rcc.c(23): warning: In file included from...
+../STM32F10x_FWLib/inc\stm32f10x_rcc.h(32): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling stm32f10x_rcc.c...
+../STM32F10x_FWLib/src/stm32f10x_gpio.c(23): warning: In file included from...
+../STM32F10x_FWLib/inc\stm32f10x_gpio.h(32): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling stm32f10x_gpio.c...
+assembling startup_stm32f10x_hd.s...
+../SYSTEM/sys/sys.c(1): warning: In file included from...
+../SYSTEM/sys/sys.h(3): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../SYSTEM/sys/sys.c(106): error: expected '(' after 'asm'
+__asm void MSR_MSP(u32 addr) 
+      ^
+../SYSTEM/sys/sys.c(106): error: expected ';' after top-level asm block
+__asm void MSR_MSP(u32 addr) 
+     ^
+     ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling sys.c...
+../STM32F10x_FWLib/src/stm32f10x_usart.c(23): warning: In file included from...
+../STM32F10x_FWLib/inc\stm32f10x_usart.h(32): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling stm32f10x_usart.c...
+../SYSTEM/delay/delay.c(1): warning: In file included from...
+../SYSTEM/delay/delay.h(3): warning: In file included from...
+../SYSTEM/sys\sys.h(3): warning: In file included from...
+../USER\stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+../SYSTEM/delay/delay.c(89): error: use of undeclared identifier 'SystemCoreClock'
+        fac_us=SystemCoreClock/8000000;                          
+               ^
+18 errors generated.
+compiling delay.c...
+main.c(1): warning: In file included from...
+../USER/stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling main.c...
+stm32f10x_it.c(25): warning: In file included from...
+../USER/stm32f10x_it.h(27): warning: In file included from...
+../USER/stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling stm32f10x_it.c...
+system_stm32f10x.c(65): warning: In file included from...
+../USER/stm32f10x.h(478): warning: In file included from...
+../CORE\core_cm3.h(1204): error: unknown type name 'inline'
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1205): error: unknown type name 'inline'
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1207): error: unknown type name 'inline'
+static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1208): error: unknown type name 'inline'
+static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1210): error: unknown type name 'inline'
+static __INLINE void __NOP()                      { __ASM volatile ("nop"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1211): error: unknown type name 'inline'
+static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1212): error: unknown type name 'inline'
+static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1213): error: unknown type name 'inline'
+static __INLINE void __SEV()                      { __ASM volatile ("sev"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1214): error: unknown type name 'inline'
+static __INLINE void __ISB()                      { __ASM volatile ("isb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1215): error: unknown type name 'inline'
+static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1216): error: unknown type name 'inline'
+static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1217): error: unknown type name 'inline'
+static __INLINE void __CLREX()                    { __ASM volatile ("clrex"); }
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1468): error: unknown type name 'inline'
+static __INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: unknown type name 'inline'
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1489): error: expected ';' after top level declarator
+static __INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+../CORE\core_cm3.h(1756): error: unknown type name 'inline'
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+       ^
+../CORE\core_cm3.h(751): note: expanded from macro '__INLINE'
+  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+                           ^
+../CORE\core_cm3.h(1756): error: expected ';' after top level declarator
+static __INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+17 errors generated.
+compiling system_stm32f10x.c...
+".\Objects\TEMP.axf" - 196 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/My PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

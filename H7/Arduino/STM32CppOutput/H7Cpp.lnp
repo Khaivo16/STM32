@@ -1,0 +1,18 @@
+--cpu Cortex-M7.fp.dp
+"..\..\stm32cppoutput\startup_stm32h750xx.o"
+"..\..\stm32cppoutput\stm32h7xx_hal_rtc.o"
+"..\..\stm32cppoutput\stm32h7xx_hal_rtc_ex.o"
+"..\..\stm32cppoutput\pinmap.o"
+"..\..\SYSTEM\H7Cpp.lib"
+"..\..\stm32cppoutput\dht11.o"
+"..\..\stm32cppoutput\tm1637display.o"
+"..\..\stm32cppoutput\modbusdevice.o"
+"..\..\stm32cppoutput\modbusregbank.o"
+"..\..\stm32cppoutput\modbusslave.o"
+"..\..\stm32cppoutput\main.o"
+"..\..\stm32cppoutput\stm32h7xx_hal_msp.o"
+"..\..\stm32cppoutput\stm32h7xx_it.o"
+--library_type=microlib --strict --scatter "..\..\STM32CppOutput\H7Cpp.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "H7Cpp.map" -o ..\..\STM32CppOutput\H7Cpp.axf

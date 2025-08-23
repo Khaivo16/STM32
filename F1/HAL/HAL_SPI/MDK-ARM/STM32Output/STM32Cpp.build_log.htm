@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LVD IC, STM32VN, LIC=R4HV2-955ZE-IN2A7-EH8NM-13VTD-ZFMKF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.11.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\0000AAAA\0 STM32F4 C++LIB\MDK-ARM\STM32F4Cpp.uvprojx
+Project File Date:  10/10/2020
+
+<h2>Output:</h2>
+Build target 'STM32F4 Configuration'
+compiling dma.c...
+..\MDK-ARM\USARTClass.h(41): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\MDK-ARM\USARTClass.h(42): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\MDK-ARM\USARTClass.h(43): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\MDK-ARM\USARTClass.h(44): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\MDK-ARM\USARTClass.h(45): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\MDK-ARM\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write" is only partially overridden in class "USARTClass"
+  class USARTClass : public Stream
+dma.c(157): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+    DMA_Channel_TypeDef
+dma.c(159): error:  #20: identifier "instance" is undefined
+    *instance)
+dma.c(160): error:  #65: expected a ";"
+  {
+dma.c(224): warning:  #12-D: parsing restarts here after previous syntax error
+        return DMA1_STREAM0_INDEX;
+dma.c(227): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream1:
+dma.c(231): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream2:
+dma.c(235): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream3:
+dma.c(239): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream4:
+dma.c(243): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream5:
+dma.c(247): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream6:
+dma.c(251): error:  #169: expected a declaration
+      case (uint32_t)DMA1_Stream7:
+dma.c(255): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream0:
+dma.c(259): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream1:
+dma.c(263): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream2:
+dma.c(267): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream3:
+dma.c(271): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream4:
+dma.c(275): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream5:
+dma.c(279): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream6:
+dma.c(283): error:  #169: expected a declaration
+      case (uint32_t)DMA2_Stream7:
+dma.c(286): error:  #169: expected a declaration
+      default:
+dma.c(289): error:  #169: expected a declaration
+  }
+dma.c(716): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+dma.c(146): warning:  #177-D: variable "dma_handles" was declared but never referenced
+  static DMA_HandleTypeDef *dma_handles[DMA_CHANNEL_NUM] = {NULL};
+dma.c(153): warning:  #177-D: variable "get_dma_index" was declared but never referenced
+  static dma_index_t get_dma_index(
+dma.c: 10 warnings, 20 errors
+".\STM32CppOutput\F4Cpp.lib" - 20 Error(s), 10 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\0000AAAA\0 STM32F4 C++LIB\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>

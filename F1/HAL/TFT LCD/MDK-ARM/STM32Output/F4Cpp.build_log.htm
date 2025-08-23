@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LVD IC, STM32VN, LIC=R4HV2-955ZE-IN2A7-EH8NM-13VTD-ZFMKF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\0000AAAA\0 F1Cpp_LIB\MDK-ARM\STM32F1Cpp.uvprojx
+Project File Date:  10/28/2020
+
+<h2>Output:</h2>
+Build target 'STM32F1 Configuration'
+compiling sys.c...
+..\MDK-ARM\USARTClass.h(48): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\MDK-ARM\USARTClass.h(49): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\MDK-ARM\USARTClass.h(50): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\MDK-ARM\USARTClass.h(51): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\MDK-ARM\USARTClass.h(52): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\MDK-ARM\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write" is only partially overridden in class "USARTClass"
+  class USARTClass : public Stream
+..\SYSTEM\sys\sys.c(831): warning:  #550-D: variable "ulChannel" was set but never used
+        uint32_t ulChannel;
+..\SYSTEM\sys\sys.c(1277): warning:  #1299-D: members and base-classes will be initialized in declaration order, not in member initialisation list order
+  spi(_spi),  initCb(_initCb), initialized(false),bitOrder(SPI_FIRSTBIT_MSB),
+..\SYSTEM\sys\sys.c(1278): warning:  #1299-D: members and base-classes will be initialized in declaration order, not in member initialisation list order
+    mode(SPI_MODE0),divider(SPI_CLOCK_DIV32)
+..\SYSTEM\sys\sys.c(1278): warning:  #1299-D: members and base-classes will be initialized in declaration order, not in member initialisation list order
+    mode(SPI_MODE0),divider(SPI_CLOCK_DIV32)
+..\SYSTEM\sys\sys.c(2748): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\SYSTEM\sys\sys.c(2760): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\SYSTEM\sys\sys.c(2783): warning:  #177-D: variable "i" was declared but never referenced
+      int i = 0;
+..\SYSTEM\sys\sys.c(2829): warning:  #940-D: missing return statement at end of non-void function "get_resitime"
+  }
+..\SYSTEM\sys\sys.c: 14 warnings, 0 errors
+compiling USARTClass.cpp...
+USARTClass.h(48): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+USARTClass.h(49): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+USARTClass.h(50): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+USARTClass.h(51): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+USARTClass.h(52): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write" is only partially overridden in class "USARTClass"
+  class USARTClass : public Stream
+USARTClass.cpp(20): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+        GPIO_InitTypeDef GPIO_InitStructure;
+USARTClass.cpp: 7 warnings, 0 errors
+linking...
+Program Size: Code=10232 RO-data=2712 RW-data=28 ZI-data=2404  
+".\STM32CppOutput\F1Cpp.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\0000AAAA\0 F1Cpp_LIB\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*
+ * MAX30100_config.h
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: hp
+ */
+
+#ifndef MAX30100_LIB_INC_MAX30100_CONFIG_H_
+#define MAX30100_LIB_INC_MAX30100_CONFIG_H_
+
+#define _MAX30100_I2C         I2C1
+#define _MAX30100_I2C_SPEED	  STANDARD_MODE
+#define _MAX30100_I2C_ADDRESS 0x57<<1
+#define _MAX30100_FREERTOS    0
+
+#endif /* MAX30100_LIB_INC_MAX30100_CONFIG_H_ */

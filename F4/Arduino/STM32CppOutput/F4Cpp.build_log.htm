@@ -1,0 +1,519 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 ADMIN, 1, LIC=4ZLZX-H6FGB-8YFVV-P3397-PI1FS-AQ5YM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\hocF4\F4Cpp++\MDK-ARM\TFT_Nextion\TFT_Nextion.uvprojx
+Project File Date:  07/27/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Warning: You are compiling one or more files of source type C++ and have selected 'use MicroLIB'. MicroLIB does not support C++!
+  
+Build target 'STM32F4 Configuration'
+assembling startup_stm32f407xx.s...
+compiling File.cpp...
+..\..\HARDWARE\SD\utility/SdFat.h(288): warning:  #1300-D: write inherits implicit virtual
+    size_t write(uint8_t b);
+..\..\HARDWARE\SD\utility/SdFat.h(137): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "SdFile" 
+  class SdFile : public Print {
+..\..\HARDWARE\SD\File.cpp(81): warning:  #68-D: integer conversion resulted in a change of sign
+    if (c != -1) _file->seekCur(-1);
+..\..\HARDWARE\SD\File.cpp(118): warning:  #68-D: integer conversion resulted in a change of sign
+    if (! _file) return -1;
+..\..\HARDWARE\SD\File.cpp: 4 warnings, 0 errors
+compiling Sd2Card.cpp...
+compiling DHT11.cpp...
+compiling SdVolume.cpp...
+..\..\HARDWARE\SD\utility\SdFat.h(288): warning:  #1300-D: write inherits implicit virtual
+    size_t write(uint8_t b);
+..\..\HARDWARE\SD\utility\SdFat.h(137): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "SdFile" 
+  class SdFile : public Print {
+..\..\HARDWARE\SD\utility\SdVolume.cpp: 2 warnings, 0 errors
+compiling SD.cpp...
+..\..\HARDWARE\SD\utility/SdFat.h(288): warning:  #1300-D: write inherits implicit virtual
+    size_t write(uint8_t b);
+..\..\HARDWARE\SD\utility/SdFat.h(137): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "SdFile" 
+  class SdFile : public Print {
+..\..\HARDWARE\SD\SD.cpp: 2 warnings, 0 errors
+compiling stm32f4xx_hal_rcc.c...
+compiling SdFile.cpp...
+..\..\HARDWARE\SD\utility\SdFat.h(288): warning:  #1300-D: write inherits implicit virtual
+    size_t write(uint8_t b);
+..\..\HARDWARE\SD\utility\SdFat.h(137): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "SdFile" 
+  class SdFile : public Print {
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\SD\utility\SdFile.cpp(208): warning:  #1293-D: assignment in condition
+    while ((p = readDirCache())) {
+..\..\HARDWARE\SD\utility\SdFile.cpp(269): warning:  #1293-D: assignment in condition
+        while ((b = *p++)) if (b == c) return false;
+..\..\HARDWARE\SD\utility\SdFile.cpp: 11 warnings, 0 errors
+compiling TM1637Display.cpp...
+compiling PinMap.c...
+compiling NexButton.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexButton.cpp: 7 warnings, 0 errors
+compiling NexCheckbox.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexCheckbox.cpp: 7 warnings, 0 errors
+compiling NexGauge.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexGauge.cpp: 7 warnings, 0 errors
+compiling NexGpio.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexGpio.cpp(17): warning:  #550-D: parameter "control_id"  was set but never used
+  bool NexGpio::pin_mode(uint32_t port,uint32_t mode,uint32_t control_id)
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexGpio.cpp: 8 warnings, 0 errors
+compiling NexObject.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexObject.cpp: 7 warnings, 0 errors
+compiling NexProgressBar.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexProgressBar.cpp: 7 warnings, 0 errors
+compiling NexNumber.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexNumber.cpp(266): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexNumber.cpp: 8 warnings, 0 errors
+compiling NexPicture.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexPicture.cpp: 7 warnings, 0 errors
+compiling NexCrop.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexCrop.cpp: 7 warnings, 0 errors
+compiling NexHotspot.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexHotspot.cpp: 7 warnings, 0 errors
+compiling NexPage.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexPage.cpp(25): warning:  #177-D: variable "buffer"  was declared but never referenced
+      uint8_t buffer[4] = {0};
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexPage.cpp: 8 warnings, 0 errors
+compiling NexDualStateButton.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexDualStateButton.cpp: 7 warnings, 0 errors
+compiling NexHardware.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexHardware.cpp: 7 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling NexTimer.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexTimer.cpp: 7 warnings, 0 errors
+compiling NexText.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexText.cpp: 7 warnings, 0 errors
+compiling NexWaveform.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexWaveform.cpp: 7 warnings, 0 errors
+compiling NexScrolltext.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexScrolltext.cpp: 7 warnings, 0 errors
+compiling NexTouch.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexTouch.cpp: 7 warnings, 0 errors
+compiling NexRtc.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(72): warning:  #940-D: missing return statement at end of non-void function "NexRtc::write_rtc_time(char *)" 
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(21): warning:  #177-D: variable "i"  was declared but never referenced
+      int i;
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(123): warning:  #940-D: missing return statement at end of non-void function "NexRtc::write_rtc_time(std::uint32_t *)" 
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(78): warning:  #177-D: variable "i"  was declared but never referenced
+      int i;
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(238): warning:  #940-D: missing return statement at end of non-void function "NexRtc::read_rtc_time(char *, std::uint32_t)" 
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(285): warning:  #940-D: missing return statement at end of non-void function "NexRtc::read_rtc_time(std::uint32_t *, std::uint32_t)" 
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(327): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp(291): warning:  #177-D: variable "buf"  was declared but never referenced
+      char buf[10] = {0};
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRtc.cpp: 15 warnings, 0 errors
+compiling NexVariable.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexVariable.cpp: 7 warnings, 0 errors
+compiling NexSlider.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexSlider.cpp: 7 warnings, 0 errors
+compiling NexRadio.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRadio.cpp(99): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexRadio.cpp: 8 warnings, 0 errors
+compiling NexUpload.cpp...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+..\..\HARDWARE\SD\utility/SdFat.h(288): warning:  #1300-D: write inherits implicit virtual
+    size_t write(uint8_t b);
+..\..\HARDWARE\SD\utility/SdFat.h(137): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "SdFile" 
+  class SdFile : public Print {
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexUpload.cpp(239): warning:  #940-D: missing return statement at end of non-void function "NexUpload::_downloadTftFile" 
+  }
+..\..\HARDWARE\TFT_Arduino_Nextion-master\NexUpload.cpp: 10 warnings, 0 errors
+compiling stm32f4xx_hal_msp.c...
+compiling system_stm32f4xx.c...
+compiling main.c...
+..\..\HARDWARE\USARTClass.h(49): warning:  #1300-D: available inherits implicit virtual
+      int available( void ) ;
+..\..\HARDWARE\USARTClass.h(50): warning:  #1300-D: peek inherits implicit virtual
+      int peek( void ) ;
+..\..\HARDWARE\USARTClass.h(51): warning:  #1300-D: read inherits implicit virtual
+      int read( void ) ;
+..\..\HARDWARE\USARTClass.h(52): warning:  #1300-D: flush inherits implicit virtual
+      void flush( void ) ;
+..\..\HARDWARE\USARTClass.h(53): warning:  #1300-D: write inherits implicit virtual
+      size_t write( const uint8_t c ) ;
+..\..\HARDWARE\USARTClass.h(24): warning:  #611-D: overloaded virtual function "Print::write"  is only partially overridden in class "USARTClass" 
+  class USARTClass : public Stream
+..\..\HARDWARE\USARTClass.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif // _USART_CLASS_
+main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=11800 RO-data=3232 RW-data=76 ZI-data=3764  
+"..\..\STM32CppOutput\F4Cpp.axf" - 0 Error(s), 202 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\ADMIN\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:25
+</pre>
+</body>
+</html>
